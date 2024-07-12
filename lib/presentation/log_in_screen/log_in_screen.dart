@@ -272,9 +272,9 @@ class _LogInScreenState extends State<LogInScreen> {
 
  /// Navigates to the signUpScreen when the action is triggered.
  onTapTxtDonthaveanaccount() {
-  // Get.toNamed(
-  //  AppRoutes.signUpScreen,
-  // );
+  Get.toNamed(
+   AppRoutes.signUpScreen,
+  );
  }
 }
 
