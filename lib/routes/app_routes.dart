@@ -1,6 +1,10 @@
 import 'package:get/get_navigation/src/routes/get_route.dart';
 import 'package:get/get_navigation/src/routes/transitions_type.dart';
 
+import '../presentation/call_details_screen/binding/call_details_binding.dart';
+import '../presentation/call_details_screen/call_details_screen.dart';
+import '../presentation/chat_details_screen/binding/chat_details_binding.dart';
+import '../presentation/chat_details_screen/chat_details_screen.dart';
 import '../presentation/course_details_screen/binding/course_details_binding.dart';
 import '../presentation/course_details_screen/course_details_screen.dart';
 import '../presentation/favorite_screen/binding/favorite_binding.dart';
@@ -19,6 +23,8 @@ import '../presentation/splash_screen/binding/splash_binding.dart';
 import '../presentation/splash_screen/splash_screen.dart';
 import '../presentation/video_screen/video_screen/binding/video_binding.dart';
 import '../presentation/video_screen/video_screen/video_screen.dart';
+import '../presentation/videocall_details_screen/binding/videocall_details_binding.dart';
+import '../presentation/videocall_details_screen/videocall_details_screen.dart';
 
 class AppRoutes {
   static const String videoScreen = '/VideoScreen';
@@ -36,9 +42,37 @@ class AppRoutes {
   static const String favoriteScreen = '/favorite_screen';
   static const String myCoursesScreen = '/my_courses_screen';
   static const String courseDetailsScreen = '/course_details_screen';
+  static const String chatDetailsScreen = '/chat_details_screen';
+  static const String callDetailsScreen = '/call_details_screen';
+  static const String videocallDetailsScreen = '/videocall_details_screen';
+
 
   static List<GetPage> pages = [
 
+    GetPage(
+      transition: Transition.rightToLeft,
+      name: callDetailsScreen,
+      page: () => CallDetailsScreen(),
+      bindings: [
+        CallDetailsBinding(),
+      ],
+    ),
+    GetPage(
+      transition: Transition.rightToLeft,
+      name: videocallDetailsScreen,
+      page: () => VideocallDetailsScreen(),
+      bindings: [
+        VideocallDetailsBinding(),
+      ],
+    ),
+    GetPage(
+      transition: Transition.rightToLeft,
+      name: chatDetailsScreen,
+      page: () => ChatDetailsScreen(),
+      bindings: [
+        ChatDetailsBinding(),
+      ],
+    ),
     GetPage(
       transition: Transition.rightToLeft,
       name: videoScreen,

@@ -1,4 +1,30 @@
 class ImageConstant {
+
+  // 04 Chat details images
+  static String imgEllipse23 = '$imagePath/img_ellipse_23.png';
+
+  static String imgVideoCameraOnprimary =
+      '$imagePath/img_video_camera_onprimary.svg';
+  // 06 Videocall details images
+  static String img06VideocallDetails =
+      '$imagePath/img_06_videocall_details.png';
+
+  static String imgSmallImage = '$imagePath/img_small_image.png';
+
+  static String imgMicrophone = '$imagePath/img_microphone.svg';
+
+  static String imgCallWhiteA700 = '$imagePath/img_call_white_a700.svg';
+
+  static String imgMail = '$imagePath/img_mail.svg';
+
+  static String imgUser = '$imagePath/img_user.svg';
+  // 05 Call Details images
+  static String imgEllipse225164x164 = '$imagePath/img_ellipse_225_164x164.png';
+
+  static String imgCallOnprimary = '$imagePath/img_call_onprimary.svg';
+  static String imgEllipse24 = '$imagePath/img_ellipse_24.png';
+  static String imgGroup29 = '$imagePath/img_group_29.svg';
+
   // tick and play icon
   static String imgPlayIcon = '$imagePath/play_icon.svg';
   static String imgLessonTickIcon = '$imagePath/tick_icon.svg';

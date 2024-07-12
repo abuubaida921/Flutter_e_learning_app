@@ -113,15 +113,14 @@ class _FundlistItemWidgetState extends State<FundlistItemWidget> {
                                 ),
                                 child: LinearPercentIndicator(
                                   padding: EdgeInsets.zero,
-barRadius: Radius.circular(16.h),
-                                  backgroundColor:appTheme.progressBarColor ,
-
+                                  barRadius: Radius.circular(16.h),
+                                  backgroundColor: appTheme.progressBarColor,
                                   animation: true,
                                   lineHeight: 6.v,
-                                  percent: double.parse(
-                                      widget.fundlistItemModelObj.progress!) /
+                                  percent: double.parse(widget
+                                          .fundlistItemModelObj.progress!) /
                                       100,
-                                  progressColor:appTheme.buttonColor,
+                                  progressColor: appTheme.buttonColor,
                                 ),
                               ),
                             ),
