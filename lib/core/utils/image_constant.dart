@@ -102,4 +102,18 @@ class ImageConstant {
   static String imgNoFavouritIcon = '$imagePath/no_favourite_icon_dark_theme.svg';
 
 
+  // bottom appbar icons
+  static String imgNavHomeInactive = '$imagePath/img_nav_home_inactive.svg';
+  static String imgNavHomeActive = '$imagePath/img_nav_home.svg';
+  static String imgNavMyCoursesInactive = '$imagePath/img_nav_my_courses.svg';
+  static String imgNavMyCoursesActive = '$imagePath/img_nav_my_courses_active.svg';
+  static String imgNavMyCoursesActiveDark = '$imagePath/my_cources_icon_dark.svg';
+  static String imgNavFavoriteInactive = '$imagePath/img_nav_favorite.svg';
+  static String imgNavFavoriteActive = '$imagePath/img_nav_favorite_active.svg';
+  static String imgNavChatInactive = '$imagePath/img_nav_chat.svg';
+  static String imgNavChatActive = '$imagePath/img_nav_chat_active.svg';
+  static String imgNavChatActiveDark = '$imagePath/chat_icon_dark.svg';
+  static String imgNavProfileInactive = '$imagePath/img_nav_profile.svg';
+  static String imgNavProfileActive = '$imagePath/img_nav_profile_active.svg';
+
 }

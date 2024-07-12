@@ -25,6 +25,11 @@ class AppRoutes {
   static const String signUpScreen = '/sign_up_screen';
 
   static const String courseDetailsAboutScreen = '/course_details_about_screen';
+  static const String homeScreenPage = '/home_screen_page';
+  static const String myCourses1Page = '/my_courses1_page';
+  static const String favorite1Page = '/favorite1_page';
+  static const String chatsPage = '/chats_page';
+  static const String profileTabContainerPage = '/profile_tab_container_page';
 
 
   static List<GetPage> pages = [
