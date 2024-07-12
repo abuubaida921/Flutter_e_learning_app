@@ -47,6 +47,7 @@ dependencies:
   #  Basic packages needed to create a project
 
   carousel_slider: ^4.2.1
+  percent_indicator: ^4.2.3
 
 
 dev_dependencies:

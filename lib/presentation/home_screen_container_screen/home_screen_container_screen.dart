@@ -5,6 +5,7 @@ import '../../widgets/custom_bottom_bar.dart';
 import '../../widgets/custom_elevated_button.dart';
 import '../../widgets/custom_outlined_button.dart';
 import '../home_screen_page/home_screen_page.dart';
+import '../my_courses1_page/my_courses1_page.dart';
 import 'controller/home_screen_container_controller.dart';
 
 class HomeScreenContainerScreen extends StatefulWidget {
@@ -20,9 +21,7 @@ class _HomeScreenContainerScreenState extends State<HomeScreenContainerScreen> {
       Get.put(HomeScreenContainerController());
   List<Widget> screen = [
     HomeScreenPage(),
-    Container(
-      color: Colors.green,
-    ),
+    MyCourses1Page(),
     Container(
       color: Colors.yellow,
     ),

@@ -1,4 +1,9 @@
 class ImageConstant {
+
+  // nocourceIcon
+  static String imgGroup34160Indigo5002154x154 = '$imagePath/img_group_34160_indigo_50_02_154x154.svg';
+  static String imgNoCourceDarkIcon = '$imagePath/no_cource_dark_icon.svg';
+
   // Image folder path
   static String imagePath = 'assets/images';
 
