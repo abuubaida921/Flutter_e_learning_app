@@ -24,6 +24,9 @@ class AppRoutes {
 
   static const String signUpScreen = '/sign_up_screen';
 
+  static const String courseDetailsAboutScreen = '/course_details_about_screen';
+
+
   static List<GetPage> pages = [
     GetPage(
       transition: Transition.rightToLeft,

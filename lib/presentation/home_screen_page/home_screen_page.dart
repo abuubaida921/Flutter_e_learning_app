@@ -3,9 +3,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_e_learning_app/core/app_export.dart';import 'package:flutter_e_learning_app/widgets/app_bar/custom_app_bar.dart';
 import 'package:flutter_e_learning_app/widgets/custom_search_view.dart';
 
+import '../../widgets/app_bar/appbar_trailing_iconbutton.dart';
 import '../../widgets/custom_icon_button.dart';
 import '../categories_screen/controller/categories_controller.dart';
 import '../categories_screen/models/categories_grid_item_model.dart';
+import '../featured_course_screen/controller/featured_course_controller.dart';
+import '../featured_course_screen/models/favorite_grid_item_model.dart';
+import '../featured_course_screen/widgets/favoritegrid_item_widget.dart';
 import 'controller/home_screen_controller.dart';
 import 'models/home_screen_model.dart';
 import 'models/slider_model.dart';
@@ -22,8 +26,8 @@ class _HomeScreenPageState extends State<HomeScreenPage> {
   HomeScreenController controller = Get.put(HomeScreenController(HomeScreenModel().obs));
   CategoriesController categoriesController = Get.put(CategoriesController());
   FeaturedCourseController featuredCourseController = Get.put(FeaturedCourseController());
-  PopularInstructorController popularInstructorController = Get.put(PopularInstructorController());
-  PopularCoursesController popularCoursesController = Get.put(PopularCoursesController());
+  // PopularInstructorController popularInstructorController = Get.put(PopularInstructorController());
+  // PopularCoursesController popularCoursesController = Get.put(PopularCoursesController());
 
   @override
   Widget build(BuildContext context) {
@@ -41,7 +45,7 @@ class _HomeScreenPageState extends State<HomeScreenPage> {
             padding: EdgeInsets.only(right: 16.h, left: 16.h),
             child: CustomSearchView(
               onTap: (){
-                Get.toNamed(AppRoutes.searchScreen);
+                // Get.toNamed(AppRoutes.searchScreen);
               },
                 textInputType: TextInputType.none,
                 controller: controller.searchController,
@@ -216,15 +220,15 @@ class _HomeScreenPageState extends State<HomeScreenPage> {
                            crossAxisSpacing: 16.h),
                        physics: BouncingScrollPhysics(),
                        itemCount:
-                       featuredCourseController.featuredCourceList.length > 2
+                       featuredCourseController.featuredCourseList.length > 2
                            ? 2
-                           : featuredCourseController.featuredCourceList.length,
+                           : featuredCourseController.featuredCourseList.length,
                        itemBuilder: (context, index) {
-                         FavoritegridItemModel model =
-                         featuredCourseController.featuredCourceList[index];
+                         FavoriteGridItemModel model =
+                         featuredCourseController.featuredCourseList[index];
                          return animationfunction(
                              index,
-                             FavoritegridItemWidget(model, onTapFund: () {
+                             FavoriteGridItemWidget(model, onTapFund: () {
                                Get.toNamed(AppRoutes.courseDetailsAboutScreen);
                              }));
                        })),
@@ -238,7 +242,7 @@ class _HomeScreenPageState extends State<HomeScreenPage> {
                          style: theme.textTheme.titleMedium!),
                      GestureDetector(
                        onTap: () {
-                         Get.toNamed(AppRoutes.popularInstructorScreen);
+                         // Get.toNamed(AppRoutes.popularInstructorScreen);
                        },
                        child: Padding(
                            padding: EdgeInsets.only(bottom: 3.v),
@@ -249,6 +253,7 @@ class _HomeScreenPageState extends State<HomeScreenPage> {
                    ],
                  ),
                ),
+               /*
                SingleChildScrollView(
                  scrollDirection: Axis.horizontal,
                  child: Padding(
@@ -316,6 +321,8 @@ class _HomeScreenPageState extends State<HomeScreenPage> {
                    ),
                  ),
                ),
+               */
+               /*
                Padding(
                  padding: EdgeInsets.symmetric(horizontal: 16.h),
                  child: Row(
@@ -350,6 +357,7 @@ class _HomeScreenPageState extends State<HomeScreenPage> {
                        child: LearnnewskillslistItemWidget(model),
                      ));
                    })
+               */
              ],
            ),
          ),
@@ -377,10 +385,10 @@ class _HomeScreenPageState extends State<HomeScreenPage> {
                 ]),
                 textAlign: TextAlign.left)),
         actions: [
-          AppbarTrailingIconbutton(
+          AppbarTrailingIconButton(
             onTap: ()
             {
-              Get.toNamed(AppRoutes.notificationsScreen);
+              // Get.toNamed(AppRoutes.notificationsScreen);
             },
               imagePath: ImageConstant.imgLock,
               margin: EdgeInsets.fromLTRB(16.h, 9.v, 16.h, 26.v))
@@ -394,22 +402,22 @@ class _HomeScreenPageState extends State<HomeScreenPage> {
 
   /// Navigates to the categoriesScreen when the action is triggered.
   onTapTxtViewAll() {
-    Get.toNamed(
-      AppRoutes.categoriesScreen,
-    );
+    // Get.toNamed(
+    //   AppRoutes.categoriesScreen,
+    // );
   }
 
   /// Navigates to the featuredCourseScreen when the action is triggered.
   onTapTxtViewAll1() {
-    Get.toNamed(
-      AppRoutes.featuredCourseScreen,
-    );
+    // Get.toNamed(
+    //   AppRoutes.featuredCourseScreen,
+    // );
   }
 
   /// Navigates to the popularCoursesScreen when the action is triggered.
   onTapTxtViewAll2() {
-    Get.toNamed(
-      AppRoutes.popularCoursesScreen,
-    );
+    // Get.toNamed(
+    //   AppRoutes.popularCoursesScreen,
+    // );
   }
 }

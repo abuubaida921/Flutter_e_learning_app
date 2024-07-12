@@ -62,4 +62,44 @@ class ImageConstant {
   static String imgContrast = '$imagePath/img_contrast.svg';
   static String imgArrowLeftOnPrimary = '$imagePath/img_arrow_left_onprimary.svg';
   static String imgArrowLeft = '$imagePath/img_arrow_left.svg';
+
+  // featured course images
+  static String imgGroupIndianCh2 = '$imagePath/img_group_indian_ch_2.png';
+  static String imgGroupIndianCh3 = '$imagePath/img_group_indian_ch_3.png';
+  static String imgGroupIndianCh4 = '$imagePath/img_group_indian_ch_4.png';
+  static String imgGroupIndianCh5 = '$imagePath/img_group_indian_ch_5.png';
+  static String imgGroupIndianCh6 = '$imagePath/img_group_indian_ch_6.png';
+  static String imgGroupIndianCh7 = '$imagePath/img_group_indian_ch_7.png';
+
+// user images
+  static String imgUser1 = '$imagePath/user1.png';
+  static String imgUser2 = '$imagePath/user2.png';
+  static String imgUser3 = '$imagePath/user3.png';
+  static String imgUser4 = '$imagePath/user4.png';
+  static String imgUser5 = '$imagePath/user5.png';
+  static String imgUser6 = '$imagePath/user6.png';
+  static String imgUser7 = '$imagePath/user7.png';
+  static String imgUser8 = '$imagePath/user8.png';
+  static String imgUser9 = '$imagePath/user9.png';
+  static String imgUser10 = '$imagePath/user10.png';
+
+  // heart icon
+  static String imgFavouriteIcon = '$imagePath/favourite_icon.svg';
+  static String imgUnFavouriteIcon = '$imagePath/favourite_icon_without_fill.svg';
+
+  // 04 Popular Courses images
+  static String imgFavoriteOnPrimary28x28 = '$imagePath/img_favorite_onprimary_28x28.svg';
+  static String imgFavoriteOnPrimary36x36 = '$imagePath/img_favorite_onprimary_36x36.svg';
+  static String imgFavoriteOnPrimary = '$imagePath/img_favorite_onprimary.svg';
+  static String imgEllipse20493 = '$imagePath/img_ellipse_2049_3.png';
+  static String imgEllipse20494 = '$imagePath/img_ellipse_2049_4.png';
+  static String imgEllipse20495 = '$imagePath/img_ellipse_2049_5.png';
+  static String imgEllipse20496 = '$imagePath/img_ellipse_2049_6.png';
+  static String imgEllipse20497 = '$imagePath/img_ellipse_2049_7.png';
+
+  // 01 Favorite images
+  static String imgGroup34160154x154 = '$imagePath/img_group_34160_154x154.svg';
+  static String imgNoFavouritIcon = '$imagePath/no_favourite_icon_dark_theme.svg';
+
+
 }
