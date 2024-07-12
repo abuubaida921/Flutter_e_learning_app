@@ -1,6 +1,8 @@
 import 'package:get/get_navigation/src/routes/get_route.dart';
 import 'package:get/get_navigation/src/routes/transitions_type.dart';
 
+import '../presentation/home_screen_container_screen/binding/home_screen_container_binding.dart';
+import '../presentation/home_screen_container_screen/home_screen_container_screen.dart';
 import '../presentation/log_in_screen/binding/log_in_binding.dart';
 import '../presentation/log_in_screen/log_in_screen.dart';
 import '../presentation/onboarding1_screen/binding/onboarding1_binding.dart';
@@ -53,6 +55,14 @@ class AppRoutes {
       page: () => SignUpScreen(),
       bindings: [
         SignUpBinding(),
+      ],
+    ),
+    GetPage(
+      transition: Transition.rightToLeft,
+      name: homeScreenContainerScreen,
+      page: () => HomeScreenContainerScreen(),
+      bindings: [
+        HomeScreenContainerBinding(),
       ],
     ),
   ];
