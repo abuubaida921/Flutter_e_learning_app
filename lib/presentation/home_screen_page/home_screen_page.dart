@@ -1,11 +1,11 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_e_learning_app/core/app_export.dart';
-import 'package:flutter_e_learning_app/widgets/app_bar/appbar_trailing_iconbutton.dart';
-import 'package:flutter_e_learning_app/widgets/app_bar/custom_app_bar.dart';
+import 'package:flutter_e_learning_app/core/app_export.dart';import 'package:flutter_e_learning_app/widgets/app_bar/custom_app_bar.dart';
 import 'package:flutter_e_learning_app/widgets/custom_search_view.dart';
 
 import '../../widgets/custom_icon_button.dart';
+import '../categories_screen/controller/categories_controller.dart';
+import '../categories_screen/models/categories_grid_item_model.dart';
 import 'controller/home_screen_controller.dart';
 import 'models/home_screen_model.dart';
 import 'models/slider_model.dart';
@@ -19,8 +19,7 @@ class HomeScreenPage extends StatefulWidget {
 }
 
 class _HomeScreenPageState extends State<HomeScreenPage> {
-  HomeScreenController controller =
-      Get.put(HomeScreenController(HomeScreenModel().obs));
+  HomeScreenController controller = Get.put(HomeScreenController(HomeScreenModel().obs));
   CategoriesController categoriesController = Get.put(CategoriesController());
   FeaturedCourseController featuredCourseController = Get.put(FeaturedCourseController());
   PopularInstructorController popularInstructorController = Get.put(PopularInstructorController());
@@ -144,7 +143,7 @@ class _HomeScreenPageState extends State<HomeScreenPage> {
                  children: List.generate(categoriesController.categories.length > 4
                      ? 4
                      : categoriesController.categories.length, (index) {
-                   CategoriesgridItemModel data =
+                   CategoriesGridItemModel data =
                    categoriesController.categories[index];
                        return Container(
                          padding: EdgeInsets.symmetric(
@@ -184,58 +183,6 @@ class _HomeScreenPageState extends State<HomeScreenPage> {
                      }),
                ),
 
-               // GridView.count(
-               //   padding: EdgeInsets.symmetric(horizontal: 16.h, vertical: 16.h),
-               //   primary: false,
-               //   shrinkWrap: true,
-               //   itemCount: categoriesController.categories.length > 4
-               //       ? 4
-               //       : categoriesController.categories.length,
-               //   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-               //       mainAxisExtent: 105.v,
-               //       crossAxisCount: 4,
-               //       mainAxisSpacing: 16.h,
-               //       crossAxisSpacing: 16.h),
-               //   itemBuilder: (context, index) {
-               //     CategoriesgridItemModel data =
-               //     categoriesController.categories[index];
-               //     return Container(
-               //       padding: EdgeInsets.symmetric(
-               //         horizontal: 8.h,
-               //         vertical: 16.v,
-               //       ),
-               //       decoration: AppDecoration.fillIndigo.copyWith(
-               //         color: data.bgColor,
-               //         borderRadius: BorderRadiusStyle.roundedBorder12,
-               //       ),
-               //       child: Column(
-               //         crossAxisAlignment: CrossAxisAlignment.center,
-               //         mainAxisAlignment: MainAxisAlignment.center,
-               //         children: [
-               //           CustomIconButton(
-               //             height: 47.adaptSize,
-               //             width: 47.adaptSize,
-               //             padding: EdgeInsets.all(11.h),
-               //             decoration: IconButtonStyleHelper.fillWhiteATL27,
-               //             child: CustomImageView(
-               //               imagePath: data.icon!,
-               //             ),
-               //           ),
-               //           SizedBox(height: 7.v),
-               //           Text(
-               //             data.title!,
-               //             style: TextStyle(
-               //               color: Colors.black,
-               //               fontSize: 14.fSize,
-               //               fontFamily: 'SF Pro Display',
-               //               fontWeight: FontWeight.w600,
-               //             ),
-               //           ),
-               //         ],
-               //       ),
-               //     );
-               //   },
-               // ),
                Padding(
                  padding: EdgeInsets.symmetric(horizontal: 16.h),
                  child: Row(
@@ -439,12 +386,6 @@ class _HomeScreenPageState extends State<HomeScreenPage> {
               margin: EdgeInsets.fromLTRB(16.h, 9.v, 16.h, 26.v))
         ]);
   }
-
-
-
-
-
-
 
   /// Navigates to the courseDetailsAboutScreen when the action is triggered.
   onTapUserProfile() {

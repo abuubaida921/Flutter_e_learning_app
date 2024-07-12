@@ -60,5 +60,6 @@ class ImageConstant {
   static String imgLock = '$imagePath/img_lock.svg';
 
   static String imgContrast = '$imagePath/img_contrast.svg';
-
+  static String imgArrowLeftOnPrimary = '$imagePath/img_arrow_left_onprimary.svg';
+  static String imgArrowLeft = '$imagePath/img_arrow_left.svg';
 }
