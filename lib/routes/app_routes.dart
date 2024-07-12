@@ -1,6 +1,8 @@
 import 'package:get/get_navigation/src/routes/get_route.dart';
 import 'package:get/get_navigation/src/routes/transitions_type.dart';
 
+import '../presentation/course_details_screen/binding/course_details_binding.dart';
+import '../presentation/course_details_screen/course_details_screen.dart';
 import '../presentation/favorite_screen/binding/favorite_binding.dart';
 import '../presentation/favorite_screen/favorite_screen.dart';
 import '../presentation/home_screen_container_screen/binding/home_screen_container_binding.dart';
@@ -15,19 +17,16 @@ import '../presentation/sign_up_screen/binding/sign_up_binding.dart';
 import '../presentation/sign_up_screen/sign_up_screen.dart';
 import '../presentation/splash_screen/binding/splash_binding.dart';
 import '../presentation/splash_screen/splash_screen.dart';
+import '../presentation/video_screen/video_screen/binding/video_binding.dart';
+import '../presentation/video_screen/video_screen/video_screen.dart';
 
 class AppRoutes {
-
+  static const String videoScreen = '/VideoScreen';
   static const String initialRoute = '/initialRoute';
-
   static const String onboarding1Screen = '/onboarding1_screen';
-
   static const String logInScreen = '/log_in_screen';
-
   static const String homeScreenContainerScreen = '/home_screen_container_screen';
-
   static const String signUpScreen = '/sign_up_screen';
-
   static const String courseDetailsAboutScreen = '/course_details_about_screen';
   static const String homeScreenPage = '/home_screen_page';
   static const String myCourses1Page = '/my_courses1_page';
@@ -36,8 +35,18 @@ class AppRoutes {
   static const String profileTabContainerPage = '/profile_tab_container_page';
   static const String favoriteScreen = '/favorite_screen';
   static const String myCoursesScreen = '/my_courses_screen';
+  static const String courseDetailsScreen = '/course_details_screen';
 
   static List<GetPage> pages = [
+
+    GetPage(
+      transition: Transition.rightToLeft,
+      name: videoScreen,
+      page: () => VideoScreen(),
+      bindings: [
+        VideoBinding()
+      ],
+    ),
     GetPage(
       transition: Transition.rightToLeft,
       name: initialRoute,
@@ -92,6 +101,14 @@ class AppRoutes {
       page: () => MyCoursesScreen(),
       bindings: [
         MyCoursesBinding(),
+      ],
+    ),
+    GetPage(
+      transition: Transition.rightToLeft,
+      name: courseDetailsScreen,
+      page: () => CourseDetailsScreen(),
+      bindings: [
+        CourseDetailsBinding(),
       ],
     ),
   ];

@@ -1,5 +1,9 @@
 class ImageConstant {
+  // tick and play icon
+  static String imgPlayIcon = '$imagePath/play_icon.svg';
+  static String imgLessonTickIcon = '$imagePath/tick_icon.svg';
 
+  static String imgStar = '$imagePath/img_star.svg';
   static String imgAvtar1 = '$imagePath/img_avtar_1.svg';
   static String imgAvtar1Dark = '$imagePath/img_avtar_1_dark.svg';
 

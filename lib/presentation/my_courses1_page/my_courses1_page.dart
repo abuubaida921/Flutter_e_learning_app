@@ -110,8 +110,8 @@ class _MyCourses1PageState extends State<MyCourses1Page> {
 
   /// Navigates to the courseDetailsScreen when the action is triggered.
   onTapFund() {
-    // Get.toNamed(
-    //   AppRoutes.courseDetailsScreen,
-    // );
+    Get.toNamed(
+      AppRoutes.courseDetailsScreen,
+    );
   }
 }

@@ -10,6 +10,7 @@ class MyCourses1Model {
       FundlistItemModel(ImageConstant.imgGroupIndianCh4, "Learn at your own pace, anywhere in the world", "2 hrs 30 min", "90",false),
       FundlistItemModel(ImageConstant.imgGroupIndianCh5, "Learn at your own pace, in your own time", "2 hrs 30 min", "98",false),
       FundlistItemModel(ImageConstant.imgGroupIndianCh115x174, "How e-learning can help you achieve your goals", "2 hrs 30 min", "40",false),
+      FundlistItemModel(ImageConstant.imgGroupIndianCh3, "How e-learning can help you achieve your goals", "2 hrs 30 min", "40",false),
     ];
   }
 }
