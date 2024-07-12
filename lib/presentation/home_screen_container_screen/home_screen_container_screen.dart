@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_e_learning_app/core/app_export.dart';
 import '../../widgets/app_bar/custom_bottom_bar_controller.dart';
 import '../../widgets/custom_elevated_button.dart';
+import '../home_screen_page/home_screen_page.dart';
 import 'controller/home_screen_container_controller.dart';
 
 
@@ -16,7 +17,8 @@ class HomeScreenContainerScreen extends StatefulWidget {
 class _HomeScreenContainerScreenState extends State<HomeScreenContainerScreen> {
  HomeScreenContainerController controller = Get.put(HomeScreenContainerController());
  List<Widget> screen = [
-  Container(color: Colors.red,),
+
+  HomeScreenPage(),
   Container(color: Colors.green,),
   Container(color: Colors.yellow,),
   Container(color: Colors.deepOrange,),
