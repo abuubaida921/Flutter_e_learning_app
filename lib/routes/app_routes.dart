@@ -1,10 +1,14 @@
 import 'package:get/get_navigation/src/routes/get_route.dart';
 import 'package:get/get_navigation/src/routes/transitions_type.dart';
 
+import '../presentation/favorite_screen/binding/favorite_binding.dart';
+import '../presentation/favorite_screen/favorite_screen.dart';
 import '../presentation/home_screen_container_screen/binding/home_screen_container_binding.dart';
 import '../presentation/home_screen_container_screen/home_screen_container_screen.dart';
 import '../presentation/log_in_screen/binding/log_in_binding.dart';
 import '../presentation/log_in_screen/log_in_screen.dart';
+import '../presentation/my_courses_screen/binding/my_courses_binding.dart';
+import '../presentation/my_courses_screen/my_courses_screen.dart';
 import '../presentation/onboarding1_screen/binding/onboarding1_binding.dart';
 import '../presentation/onboarding1_screen/onboarding1_screen.dart';
 import '../presentation/sign_up_screen/binding/sign_up_binding.dart';
@@ -30,7 +34,8 @@ class AppRoutes {
   static const String favorite1Page = '/favorite1_page';
   static const String chatsPage = '/chats_page';
   static const String profileTabContainerPage = '/profile_tab_container_page';
-
+  static const String favoriteScreen = '/favorite_screen';
+  static const String myCoursesScreen = '/my_courses_screen';
 
   static List<GetPage> pages = [
     GetPage(
@@ -71,6 +76,22 @@ class AppRoutes {
       page: () => HomeScreenContainerScreen(),
       bindings: [
         HomeScreenContainerBinding(),
+      ],
+    ),
+    GetPage(
+      transition: Transition.rightToLeft,
+      name: favoriteScreen,
+      page: () => FavoriteScreen(),
+      bindings: [
+        FavoriteBinding(),
+      ],
+    ),
+    GetPage(
+      transition: Transition.rightToLeft,
+      name: myCoursesScreen,
+      page: () => MyCoursesScreen(),
+      bindings: [
+        MyCoursesBinding(),
       ],
     ),
   ];

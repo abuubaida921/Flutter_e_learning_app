@@ -4,6 +4,7 @@ import '../../widgets/app_bar/custom_bottom_bar_controller.dart';
 import '../../widgets/custom_bottom_bar.dart';
 import '../../widgets/custom_elevated_button.dart';
 import '../../widgets/custom_outlined_button.dart';
+import '../chat_list_tab_container_screen/chat_list_tab_container_screen.dart';
 import '../favorite1_page/favorite1_page.dart';
 import '../home_screen_page/home_screen_page.dart';
 import '../my_courses1_page/my_courses1_page.dart';
@@ -24,9 +25,7 @@ class _HomeScreenContainerScreenState extends State<HomeScreenContainerScreen> {
     HomeScreenPage(),
     MyCourses1Page(),
     Favorite1Page(),
-    Container(
-      color: Colors.deepOrange,
-    ),
+    ChatListTabContainerScreen(),
     Container(
       color: Colors.blue,
     ),

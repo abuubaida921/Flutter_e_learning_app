@@ -1,5 +1,24 @@
 class ImageConstant {
 
+  static String imgAvtar1 = '$imagePath/img_avtar_1.svg';
+  static String imgAvtar1Dark = '$imagePath/img_avtar_1_dark.svg';
+
+  // 01 Chats images
+  static String imgGroup341601 = '$imagePath/img_group_34160_1.svg';
+  static String imgNoChatDarkIcon = '$imagePath/no_chats_item_icon.svg';
+
+  // call icons
+  static String imgCallIcon = '$imagePath/call_icon.svg';
+  static String imgVidioCallIcon = '$imagePath/video_call_icon.svg';
+
+  // chat list
+  static String imgEllipse22 = '$imagePath/img_ellipse_22.png';
+  static String imgEllipse2258x58 = '$imagePath/img_ellipse_22_58x58.png';
+  static String imgEllipse221 = '$imagePath/img_ellipse_22_1.png';
+  static String imgEllipse222 = '$imagePath/img_ellipse_22_2.png';
+  static String imgEllipse223 = '$imagePath/img_ellipse_22_3.png';
+  static String imgEllipse224 = '$imagePath/img_ellipse_22_4.png';
+
   // nocourceIcon
   static String imgGroup34160Indigo5002154x154 = '$imagePath/img_group_34160_indigo_50_02_154x154.svg';
   static String imgNoCourceDarkIcon = '$imagePath/no_cource_dark_icon.svg';
